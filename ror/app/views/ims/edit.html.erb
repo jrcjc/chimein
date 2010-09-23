@@ -1,0 +1,27 @@
+<h1>Editing im</h1>
+
+<% form_for(@im) do |f| %>
+  <%= f.error_messages %>
+<p>
+    <%= f.label :protocol %><br />
+    <%= f.text_field :protocol %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @im %> |
+<%= link_to 'Back', ims_path %>

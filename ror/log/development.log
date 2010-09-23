@@ -1,0 +1,424 @@
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (19.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIms (20100917021934)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "ims" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "protocol" text, "username" text, "password" text, "type" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100917021934')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("ims")[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 10:37:29) [GET]
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 335ms (View: 313, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-09-17 10:37:35) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-09-17 10:37:37) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"wdAPyOuA5ku/PZhgtO7+j8mTXdjqOf93yEOhsPsCkX0="}
+  [4;35;1mIm Create (22.6ms)[0m   [0mINSERT INTO "ims" ("created_at", "updated_at", "protocol", "username", "type", "password") VALUES('2010-09-17 02:37:37', '2010-09-17 02:37:37', NULL, NULL, NULL, NULL)[0m
+Redirected to http://0.0.0.0:3007/ims/1
+Completed in 50ms (DB: 23) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 10:37:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 1) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/ims/1]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 10:49:37) [GET]
+  [4;35;1mIm Load (0.6ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 11:00:21) [GET]
+  [4;36;1mIm Load (23.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 11:06:23) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+
+NoMethodError (undefined method `status=' for #<Im:0x103fd4518>):
+  app/controllers/ims_controller.rb:10:in `index'
+  app/controllers/ims_controller.rb:9:in `each'
+  app/controllers/ims_controller.rb:9:in `index'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (55.3ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 11:36:18) [GET]
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 15533ms (View: 141, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-09-17 11:36:49) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 39ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-09-17 11:38:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>"yoyochemin_test1", "protocol"=>"Yahoo", "type"=>"user", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mIm Create (0.6ms)[0m   [0;1mINSERT INTO "ims" ("created_at", "updated_at", "protocol", "username", "type", "password") VALUES('2010-09-17 03:38:17', '2010-09-17 03:38:17', 'Yahoo', 'yoyochemin_test1', NULL, '')[0m
+Redirected to http://0.0.0.0:3008/ims/2
+Completed in 321ms (DB: 1) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 11:38:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+
+ActionView::TemplateError (undefined method `lastconnect' for #<Im:0x1040ebaa0>) on line #18 of app/views/ims/show.html.erb:
+15: 
+16: <p>
+17:   <b>Lastconnect:</b>
+18:   <%=h @im.lastconnect %>
+19: </p>
+20: <%= link_to 'Edit', edit_im_path(@im) %> |
+21: <%= link_to 'Back', ims_path %>
+
+    app/views/ims/show.html.erb:18
+    app/controllers/ims_controller.rb:24:in `show'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (139.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 11:39:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 11:39:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-09-17 11:39:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 137ms (View: 133, DB: 0) | 200 OK [http://0.0.0.0/ims/2/edit]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-09-17 11:40:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 82ms (View: 77, DB: 0) | 200 OK [http://0.0.0.0/ims/2/edit]
+
+
+Processing ImsController#update (for 127.0.0.1 at 2010-09-17 11:40:27) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>"yoyochemin_test1", "protocol"=>"Yahoo", "type"=>"user", "password"=>""}, "id"=>"2"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+WARNING: Can't mass-assign these protected attributes: type
+Redirected to http://0.0.0.0:3008/ims/2
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 11:40:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-09-17 11:41:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/2/edit]
+
+
+Processing ImsController#update (for 127.0.0.1 at 2010-09-17 11:42:06) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>"yoyochemin_test1", "protocol"=>"Yahoo", "type"=>"user", "password"=>"test123"}, "id"=>"2"}
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mIm Update (0.2ms)[0m   [0;1mUPDATE "ims" SET "updated_at" = '2010-09-17 03:42:06', "password" = 'test123' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3008/ims/2
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 11:42:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 11:42:52) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 11:48:06) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 12:14:25) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:07:10) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:34:22) [GET]
+  [4;36;1mIm Load (6.1ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" IS NULL) LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 19637ms (View: 41, DB: 7) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#destroy (for 127.0.0.1 at 2010-09-17 14:34:55) [DELETE]
+  Parameters: {"authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "id"=>"1"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 1) [0m
+  [4;36;1mIm Destroy (0.3ms)[0m   [0;1mDELETE FROM "ims" WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3010/ims
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/ims/1]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:34:55) [GET]
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 9594ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-09-17 14:37:50) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-09-17 14:38:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>"rriill", "protocol"=>"Yahoo", "type"=>"user", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mIm Create (42.0ms)[0m   [0mINSERT INTO "ims" ("created_at", "updated_at", "protocol", "username", "type", "password") VALUES('2010-09-17 06:38:06', '2010-09-17 06:38:06', 'Yahoo', 'rriill', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/3
+Completed in 69ms (DB: 42) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 14:38:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 3) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/3]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:38:11) [GET]
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 17201ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-09-17 14:39:44) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-09-17 14:39:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>"jrcjc", "protocol"=>"Yahoo", "type"=>"", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mIm Create (35.8ms)[0m   [0;1mINSERT INTO "ims" ("created_at", "updated_at", "protocol", "username", "type", "password") VALUES('2010-09-17 06:39:51', '2010-09-17 06:39:51', 'Yahoo', 'jrcjc', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/4
+Completed in 48ms (DB: 36) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 14:39:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:39:54) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.6ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 18077ms (View: 11, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:40:55) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.5ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:42:04) [GET]
+  [4;36;1mIm Load (1.2ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 20870ms (View: 49, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 14:58:43) [GET]
+  [4;36;1mIm Load (19.0ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 23422ms (View: 12, DB: 20) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-09-17 15:00:36) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-09-17 15:00:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"HE6ONkWJE6AWuxoTQpEmP9GzvkIcCEBXbiwBaHJtXNI=", "im"=>{"username"=>" darvyfranco", "protocol"=>"Yahoo", "type"=>"", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mIm Create (0.3ms)[0m   [0;1mINSERT INTO "ims" ("created_at", "updated_at", "protocol", "username", "type", "password") VALUES('2010-09-17 07:00:44', '2010-09-17 07:00:44', 'Yahoo', ' darvyfranco', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/5
+Completed in 38ms (DB: 0) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-09-17 15:00:44) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 5) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/ims/5]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 15:00:45) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.5ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 14133ms (View: 31, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 15:04:39) [GET]
+  [4;35;1mIm Load (0.5ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.9ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 24914ms (View: 16, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 15:10:00) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-17 15:13:43) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-09-21 16:59:17) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 55803ms (View: 83, DB: 2) | 200 OK [http://0.0.0.0/ims]

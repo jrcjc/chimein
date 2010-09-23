@@ -1,0 +1,21 @@
+<p>
+  <b>Protocol:</b>
+  <%=h @im.protocol %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%=h @im.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @im.password %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @im.type %>
+</p>
+<%= link_to 'Edit', edit_im_path(@im) %> |
+<%= link_to 'Back', ims_path %>
