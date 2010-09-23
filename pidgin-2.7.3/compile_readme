@@ -1,0 +1,3 @@
+sudo ./configure --disable-gtkui --disable-gstreamer --disable-vv --disable-idn --disable-meanwhile --disable-avahi --disable-dbus --disable-dependency-tracking
+make
+make install

@@ -1,0 +1,774 @@
+libsilcpurple_la-ops.lo .libs/libsilcpurple_la-ops.o: ops.c \
+  ../../../libpurple/internal.h ../../../config.h /usr/include/locale.h \
+  /usr/include/_locale.h /usr/include/sys/cdefs.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /sw/include/libintl.h \
+  /usr/include/sys/stat.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/sys/_structs.h \
+  /usr/include/sys/types.h /usr/include/sys/appleapiopts.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/sys/time.h \
+  /usr/include/time.h /usr/include/_structs.h /usr/include/sys/_select.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/machine/signal.h /usr/include/i386/signal.h \
+  /usr/include/i386/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/ctype.h /usr/include/runetype.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/fcntl.h /usr/include/sys/fcntl.h \
+  /usr/include/math.h /usr/include/architecture/i386/math.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/alloca.h /usr/include/string.h \
+  /usr/include/secure/_string.h /sw/include/glib-2.0/gmodule.h \
+  /sw/include/glib-2.0/glib.h /sw/include/glib-2.0/glib/galloca.h \
+  /sw/include/glib-2.0/glib/gtypes.h \
+  /sw/lib/glib-2.0/include/glibconfig.h \
+  /sw/include/glib-2.0/glib/gmacros.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h \
+  /sw/include/glib-2.0/glib/garray.h \
+  /sw/include/glib-2.0/glib/gasyncqueue.h \
+  /sw/include/glib-2.0/glib/gthread.h /sw/include/glib-2.0/glib/gerror.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h \
+  /sw/include/glib-2.0/glib/gquark.h /sw/include/glib-2.0/glib/gutils.h \
+  /sw/include/glib-2.0/glib/gatomic.h \
+  /sw/include/glib-2.0/glib/gbacktrace.h /usr/include/signal.h \
+  /sw/include/glib-2.0/glib/gbase64.h \
+  /sw/include/glib-2.0/glib/gbookmarkfile.h \
+  /sw/include/glib-2.0/glib/gcache.h /sw/include/glib-2.0/glib/glist.h \
+  /sw/include/glib-2.0/glib/gmem.h /sw/include/glib-2.0/glib/gslice.h \
+  /sw/include/glib-2.0/glib/gchecksum.h \
+  /sw/include/glib-2.0/glib/gcompletion.h \
+  /sw/include/glib-2.0/glib/gconvert.h \
+  /sw/include/glib-2.0/glib/gdataset.h /sw/include/glib-2.0/glib/gdate.h \
+  /sw/include/glib-2.0/glib/gdir.h /sw/include/glib-2.0/glib/gfileutils.h \
+  /sw/include/glib-2.0/glib/ghash.h /sw/include/glib-2.0/glib/ghook.h \
+  /sw/include/glib-2.0/glib/ghostutils.h \
+  /sw/include/glib-2.0/glib/giochannel.h \
+  /sw/include/glib-2.0/glib/gmain.h /sw/include/glib-2.0/glib/gpoll.h \
+  /sw/include/glib-2.0/glib/gslist.h /sw/include/glib-2.0/glib/gstring.h \
+  /sw/include/glib-2.0/glib/gunicode.h \
+  /sw/include/glib-2.0/glib/gkeyfile.h \
+  /sw/include/glib-2.0/glib/gmappedfile.h \
+  /sw/include/glib-2.0/glib/gmarkup.h \
+  /sw/include/glib-2.0/glib/gmessages.h /sw/include/glib-2.0/glib/gnode.h \
+  /sw/include/glib-2.0/glib/goption.h \
+  /sw/include/glib-2.0/glib/gpattern.h \
+  /sw/include/glib-2.0/glib/gprimes.h /sw/include/glib-2.0/glib/gqsort.h \
+  /sw/include/glib-2.0/glib/gqueue.h /sw/include/glib-2.0/glib/grand.h \
+  /sw/include/glib-2.0/glib/grel.h /sw/include/glib-2.0/glib/gregex.h \
+  /sw/include/glib-2.0/glib/gscanner.h \
+  /sw/include/glib-2.0/glib/gsequence.h \
+  /sw/include/glib-2.0/glib/gshell.h /sw/include/glib-2.0/glib/gspawn.h \
+  /sw/include/glib-2.0/glib/gstrfuncs.h \
+  /sw/include/glib-2.0/glib/gtestutils.h \
+  /sw/include/glib-2.0/glib/gthreadpool.h \
+  /sw/include/glib-2.0/glib/gtimer.h /sw/include/glib-2.0/glib/gtree.h \
+  /sw/include/glib-2.0/glib/gurifuncs.h /usr/include/dlfcn.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h \
+  /usr/include/AvailabilityMacros.h /usr/include/netinet/in.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/machine/_param.h \
+  /usr/include/i386/_param.h /usr/include/netinet6/in6.h \
+  /usr/include/arpa/inet.h /usr/include/sys/un.h \
+  /usr/include/sys/utsname.h /usr/include/netdb.h /usr/include/unistd.h \
+  /usr/include/sys/unistd.h /usr/include/sys/select.h \
+  /sw/include/glib-2.0/glib/gstdio.h /sw/include/glib-2.0/glib/gprintf.h \
+  /sw/include/glib-2.0/glib-object.h \
+  /sw/include/glib-2.0/gobject/gboxed.h \
+  /sw/include/glib-2.0/gobject/gtype.h \
+  /sw/include/glib-2.0/gobject/genums.h \
+  /sw/include/glib-2.0/gobject/gobject.h \
+  /sw/include/glib-2.0/gobject/gvalue.h \
+  /sw/include/glib-2.0/gobject/gparam.h \
+  /sw/include/glib-2.0/gobject/gclosure.h \
+  /sw/include/glib-2.0/gobject/gsignal.h \
+  /sw/include/glib-2.0/gobject/gmarshal.h \
+  /sw/include/glib-2.0/gobject/gparamspecs.h \
+  /sw/include/glib-2.0/gobject/gsourceclosure.h \
+  /sw/include/glib-2.0/gobject/gtypemodule.h \
+  /sw/include/glib-2.0/gobject/gtypeplugin.h \
+  /sw/include/glib-2.0/gobject/gvaluearray.h \
+  /sw/include/glib-2.0/gobject/gvaluetypes.h ../../../libpurple/account.h \
+  ../../../libpurple/connection.h ../../../libpurple/plugin.h \
+  ../../../libpurple/signals.h ../../../libpurple/value.h \
+  ../../../libpurple/pluginpref.h ../../../libpurple/prefs.h \
+  ../../../libpurple/status.h ../../../libpurple/blist.h \
+  ../../../libpurple/buddyicon.h ../../../libpurple/imgstore.h \
+  ../../../libpurple/prpl.h ../../../libpurple/conversation.h \
+  ../../../libpurple/log.h ../../../libpurple/server.h \
+  ../../../libpurple/ft.h ../../../libpurple/media.h \
+  ../../../libpurple/media/candidate.h \
+  ../../../libpurple/media/enum-types.h ../../../libpurple/media/codec.h \
+  ../../../libpurple/media/../util.h \
+  ../../../libpurple/media/../account.h \
+  ../../../libpurple/media/../signals.h \
+  ../../../libpurple/media/../xmlnode.h \
+  ../../../libpurple/media/../notify.h \
+  ../../../libpurple/media/../connection.h \
+  ../../../libpurple/media/enum-types.h ../../../libpurple/util.h \
+  ../../../libpurple/notify.h ../../../libpurple/proxy.h \
+  ../../../libpurple/eventloop.h ../../../libpurple/roomlist.h \
+  ../../../libpurple/whiteboard.h ../../../libpurple/sslconn.h \
+  ../../../libpurple/certificate.h ../../../libpurple/privacy.h \
+  /sw/include/silc/silc.h /usr/include/pwd.h /usr/include/sys/times.h \
+  /usr/include/regex.h /usr/include/termios.h /usr/include/sys/termios.h \
+  /usr/include/sys/ttycom.h /usr/include/sys/ioccom.h \
+  /usr/include/sys/ttydefaults.h /sw/include/silc/silctypes.h \
+  /sw/include/silc/silcmutex.h /sw/include/silc/silcatomic.h \
+  /sw/include/silc/silcversion.h /sw/include/silc/silcstack.h \
+  /sw/include/silc/silcstack_i.h /sw/include/silc/silcmemory.h \
+  /sw/include/silc/silcsnprintf.h /sw/include/silc/silcmp.h \
+  /sw/include/silc/mp_tma.h /sw/include/silc/tma.h \
+  /sw/include/silc/tma_class.h /sw/include/silc/tma_superclass.h \
+  /sw/include/silc/silcmath.h /sw/include/silc/silcrng.h \
+  /sw/include/silc/silctime.h /sw/include/silc/silccond.h \
+  /sw/include/silc/silcthread.h /sw/include/silc/silcschedule.h \
+  /sw/include/silc/silcschedule_i.h /sw/include/silc/silchashtable.h \
+  /sw/include/silc/silclist.h /sw/include/silc/silclog.h \
+  /sw/include/silc/silclog_i.h /sw/include/silc/silcbuffer.h \
+  /sw/include/silc/silcbuffmt.h /sw/include/silc/silccipher.h \
+  /sw/include/silc/silchash.h /sw/include/silc/silchmac.h \
+  /sw/include/silc/silcpkcs.h /sw/include/silc/silcpk.h \
+  /sw/include/silc/silcpkcs1.h /sw/include/silc/silcdlist.h \
+  /sw/include/silc/silcasync.h /sw/include/silc/silcasync_i.h \
+  /sw/include/silc/silcstream.h /sw/include/silc/silcnet.h \
+  /sw/include/silc/silcnet_i.h /sw/include/silc/silcfileutil.h \
+  /sw/include/silc/silcstrutil.h /sw/include/silc/silcutf8.h \
+  /sw/include/silc/silcstringprep.h /sw/include/silc/silcutil.h \
+  /sw/include/silc/silcconfig.h /sw/include/silc/silcfsm.h \
+  /sw/include/silc/silcfsm_i.h /sw/include/silc/silcsocketstream.h \
+  /sw/include/silc/silcsocketstream_i.h /sw/include/silc/silcfdstream.h \
+  /sw/include/silc/silcmime.h /sw/include/silc/silcmime_i.h \
+  /sw/include/silc/silcvcard.h /sw/include/silc/silcasn1.h \
+  /sw/include/silc/silcasn1_i.h /sw/include/silc/silcber.h \
+  /sw/include/silc/silcargument.h /sw/include/silc/silcstatus.h \
+  /sw/include/silc/silcid.h /sw/include/silc/silccommand.h \
+  /sw/include/silc/silcauth.h /sw/include/silc/silcmessage.h \
+  /sw/include/silc/silcmessage_i.h /sw/include/silc/silcchannel.h \
+  /sw/include/silc/silcpacket.h /sw/include/silc/silcnotify.h \
+  /sw/include/silc/silcmode.h /sw/include/silc/silcattrs.h \
+  /sw/include/silc/silcpubkey.h /sw/include/silc/silcapputil.h \
+  /sw/include/silc/silcidcache.h /sw/include/silc/silcskr.h \
+  /sw/include/silc/silcskr_i.h /sw/include/silc/silcske.h \
+  /sw/include/silc/silcske_groups.h /sw/include/silc/silcske_payload.h \
+  /sw/include/silc/silcske_i.h /sw/include/silc/silcconnauth.h \
+  /sw/include/silc/silcsftp.h /sw/include/silc/silcsftp_fs.h \
+  /sw/include/silc/silchttpserver.h /sw/include/silc/silchttpphp.h \
+  /sw/include/silc/silcclient.h /sw/include/silc/client.h \
+  /sw/include/silc/silcclient_entry.h silcpurple.h \
+  ../../../libpurple/account.h ../../../libpurple/accountopt.h \
+  ../../../libpurple/cmds.h ../../../libpurple/conversation.h \
+  ../../../libpurple/debug.h ../../../libpurple/ft.h \
+  ../../../libpurple/notify.h ../../../libpurple/prpl.h \
+  ../../../libpurple/request.h ../../../libpurple/roomlist.h \
+  ../../../libpurple/server.h ../../../libpurple/util.h \
+  ../../../libpurple/imgstore.h wb.h ../../../libpurple/whiteboard.h
+
+../../../libpurple/internal.h:
+
+../../../config.h:
+
+/usr/include/locale.h:
+
+/usr/include/_locale.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/sw/include/libintl.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/_structs.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
+
+/usr/include/sys/_select.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/i386/_structs.h:
+
+/usr/include/machine/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/ctype.h:
+
+/usr/include/runetype.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/sys/fcntl.h:
+
+/usr/include/math.h:
+
+/usr/include/architecture/i386/math.h:
+
+/usr/include/stdio.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/secure/_string.h:
+
+/sw/include/glib-2.0/gmodule.h:
+
+/sw/include/glib-2.0/glib.h:
+
+/sw/include/glib-2.0/glib/galloca.h:
+
+/sw/include/glib-2.0/glib/gtypes.h:
+
+/sw/lib/glib-2.0/include/glibconfig.h:
+
+/sw/include/glib-2.0/glib/gmacros.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h:
+
+/sw/include/glib-2.0/glib/garray.h:
+
+/sw/include/glib-2.0/glib/gasyncqueue.h:
+
+/sw/include/glib-2.0/glib/gthread.h:
+
+/sw/include/glib-2.0/glib/gerror.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h:
+
+/sw/include/glib-2.0/glib/gquark.h:
+
+/sw/include/glib-2.0/glib/gutils.h:
+
+/sw/include/glib-2.0/glib/gatomic.h:
+
+/sw/include/glib-2.0/glib/gbacktrace.h:
+
+/usr/include/signal.h:
+
+/sw/include/glib-2.0/glib/gbase64.h:
+
+/sw/include/glib-2.0/glib/gbookmarkfile.h:
+
+/sw/include/glib-2.0/glib/gcache.h:
+
+/sw/include/glib-2.0/glib/glist.h:
+
+/sw/include/glib-2.0/glib/gmem.h:
+
+/sw/include/glib-2.0/glib/gslice.h:
+
+/sw/include/glib-2.0/glib/gchecksum.h:
+
+/sw/include/glib-2.0/glib/gcompletion.h:
+
+/sw/include/glib-2.0/glib/gconvert.h:
+
+/sw/include/glib-2.0/glib/gdataset.h:
+
+/sw/include/glib-2.0/glib/gdate.h:
+
+/sw/include/glib-2.0/glib/gdir.h:
+
+/sw/include/glib-2.0/glib/gfileutils.h:
+
+/sw/include/glib-2.0/glib/ghash.h:
+
+/sw/include/glib-2.0/glib/ghook.h:
+
+/sw/include/glib-2.0/glib/ghostutils.h:
+
+/sw/include/glib-2.0/glib/giochannel.h:
+
+/sw/include/glib-2.0/glib/gmain.h:
+
+/sw/include/glib-2.0/glib/gpoll.h:
+
+/sw/include/glib-2.0/glib/gslist.h:
+
+/sw/include/glib-2.0/glib/gstring.h:
+
+/sw/include/glib-2.0/glib/gunicode.h:
+
+/sw/include/glib-2.0/glib/gkeyfile.h:
+
+/sw/include/glib-2.0/glib/gmappedfile.h:
+
+/sw/include/glib-2.0/glib/gmarkup.h:
+
+/sw/include/glib-2.0/glib/gmessages.h:
+
+/sw/include/glib-2.0/glib/gnode.h:
+
+/sw/include/glib-2.0/glib/goption.h:
+
+/sw/include/glib-2.0/glib/gpattern.h:
+
+/sw/include/glib-2.0/glib/gprimes.h:
+
+/sw/include/glib-2.0/glib/gqsort.h:
+
+/sw/include/glib-2.0/glib/gqueue.h:
+
+/sw/include/glib-2.0/glib/grand.h:
+
+/sw/include/glib-2.0/glib/grel.h:
+
+/sw/include/glib-2.0/glib/gregex.h:
+
+/sw/include/glib-2.0/glib/gscanner.h:
+
+/sw/include/glib-2.0/glib/gsequence.h:
+
+/sw/include/glib-2.0/glib/gshell.h:
+
+/sw/include/glib-2.0/glib/gspawn.h:
+
+/sw/include/glib-2.0/glib/gstrfuncs.h:
+
+/sw/include/glib-2.0/glib/gtestutils.h:
+
+/sw/include/glib-2.0/glib/gthreadpool.h:
+
+/sw/include/glib-2.0/glib/gtimer.h:
+
+/sw/include/glib-2.0/glib/gtree.h:
+
+/sw/include/glib-2.0/glib/gurifuncs.h:
+
+/usr/include/dlfcn.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h:
+
+/usr/include/AvailabilityMacros.h:
+
+/usr/include/netinet/in.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/machine/_param.h:
+
+/usr/include/i386/_param.h:
+
+/usr/include/netinet6/in6.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/sys/un.h:
+
+/usr/include/sys/utsname.h:
+
+/usr/include/netdb.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/sys/select.h:
+
+/sw/include/glib-2.0/glib/gstdio.h:
+
+/sw/include/glib-2.0/glib/gprintf.h:
+
+/sw/include/glib-2.0/glib-object.h:
+
+/sw/include/glib-2.0/gobject/gboxed.h:
+
+/sw/include/glib-2.0/gobject/gtype.h:
+
+/sw/include/glib-2.0/gobject/genums.h:
+
+/sw/include/glib-2.0/gobject/gobject.h:
+
+/sw/include/glib-2.0/gobject/gvalue.h:
+
+/sw/include/glib-2.0/gobject/gparam.h:
+
+/sw/include/glib-2.0/gobject/gclosure.h:
+
+/sw/include/glib-2.0/gobject/gsignal.h:
+
+/sw/include/glib-2.0/gobject/gmarshal.h:
+
+/sw/include/glib-2.0/gobject/gparamspecs.h:
+
+/sw/include/glib-2.0/gobject/gsourceclosure.h:
+
+/sw/include/glib-2.0/gobject/gtypemodule.h:
+
+/sw/include/glib-2.0/gobject/gtypeplugin.h:
+
+/sw/include/glib-2.0/gobject/gvaluearray.h:
+
+/sw/include/glib-2.0/gobject/gvaluetypes.h:
+
+../../../libpurple/account.h:
+
+../../../libpurple/connection.h:
+
+../../../libpurple/plugin.h:
+
+../../../libpurple/signals.h:
+
+../../../libpurple/value.h:
+
+../../../libpurple/pluginpref.h:
+
+../../../libpurple/prefs.h:
+
+../../../libpurple/status.h:
+
+../../../libpurple/blist.h:
+
+../../../libpurple/buddyicon.h:
+
+../../../libpurple/imgstore.h:
+
+../../../libpurple/prpl.h:
+
+../../../libpurple/conversation.h:
+
+../../../libpurple/log.h:
+
+../../../libpurple/server.h:
+
+../../../libpurple/ft.h:
+
+../../../libpurple/media.h:
+
+../../../libpurple/media/candidate.h:
+
+../../../libpurple/media/enum-types.h:
+
+../../../libpurple/media/codec.h:
+
+../../../libpurple/media/../util.h:
+
+../../../libpurple/media/../account.h:
+
+../../../libpurple/media/../signals.h:
+
+../../../libpurple/media/../xmlnode.h:
+
+../../../libpurple/media/../notify.h:
+
+../../../libpurple/media/../connection.h:
+
+../../../libpurple/media/enum-types.h:
+
+../../../libpurple/util.h:
+
+../../../libpurple/notify.h:
+
+../../../libpurple/proxy.h:
+
+../../../libpurple/eventloop.h:
+
+../../../libpurple/roomlist.h:
+
+../../../libpurple/whiteboard.h:
+
+../../../libpurple/sslconn.h:
+
+../../../libpurple/certificate.h:
+
+../../../libpurple/privacy.h:
+
+/sw/include/silc/silc.h:
+
+/usr/include/pwd.h:
+
+/usr/include/sys/times.h:
+
+/usr/include/regex.h:
+
+/usr/include/termios.h:
+
+/usr/include/sys/termios.h:
+
+/usr/include/sys/ttycom.h:
+
+/usr/include/sys/ioccom.h:
+
+/usr/include/sys/ttydefaults.h:
+
+/sw/include/silc/silctypes.h:
+
+/sw/include/silc/silcmutex.h:
+
+/sw/include/silc/silcatomic.h:
+
+/sw/include/silc/silcversion.h:
+
+/sw/include/silc/silcstack.h:
+
+/sw/include/silc/silcstack_i.h:
+
+/sw/include/silc/silcmemory.h:
+
+/sw/include/silc/silcsnprintf.h:
+
+/sw/include/silc/silcmp.h:
+
+/sw/include/silc/mp_tma.h:
+
+/sw/include/silc/tma.h:
+
+/sw/include/silc/tma_class.h:
+
+/sw/include/silc/tma_superclass.h:
+
+/sw/include/silc/silcmath.h:
+
+/sw/include/silc/silcrng.h:
+
+/sw/include/silc/silctime.h:
+
+/sw/include/silc/silccond.h:
+
+/sw/include/silc/silcthread.h:
+
+/sw/include/silc/silcschedule.h:
+
+/sw/include/silc/silcschedule_i.h:
+
+/sw/include/silc/silchashtable.h:
+
+/sw/include/silc/silclist.h:
+
+/sw/include/silc/silclog.h:
+
+/sw/include/silc/silclog_i.h:
+
+/sw/include/silc/silcbuffer.h:
+
+/sw/include/silc/silcbuffmt.h:
+
+/sw/include/silc/silccipher.h:
+
+/sw/include/silc/silchash.h:
+
+/sw/include/silc/silchmac.h:
+
+/sw/include/silc/silcpkcs.h:
+
+/sw/include/silc/silcpk.h:
+
+/sw/include/silc/silcpkcs1.h:
+
+/sw/include/silc/silcdlist.h:
+
+/sw/include/silc/silcasync.h:
+
+/sw/include/silc/silcasync_i.h:
+
+/sw/include/silc/silcstream.h:
+
+/sw/include/silc/silcnet.h:
+
+/sw/include/silc/silcnet_i.h:
+
+/sw/include/silc/silcfileutil.h:
+
+/sw/include/silc/silcstrutil.h:
+
+/sw/include/silc/silcutf8.h:
+
+/sw/include/silc/silcstringprep.h:
+
+/sw/include/silc/silcutil.h:
+
+/sw/include/silc/silcconfig.h:
+
+/sw/include/silc/silcfsm.h:
+
+/sw/include/silc/silcfsm_i.h:
+
+/sw/include/silc/silcsocketstream.h:
+
+/sw/include/silc/silcsocketstream_i.h:
+
+/sw/include/silc/silcfdstream.h:
+
+/sw/include/silc/silcmime.h:
+
+/sw/include/silc/silcmime_i.h:
+
+/sw/include/silc/silcvcard.h:
+
+/sw/include/silc/silcasn1.h:
+
+/sw/include/silc/silcasn1_i.h:
+
+/sw/include/silc/silcber.h:
+
+/sw/include/silc/silcargument.h:
+
+/sw/include/silc/silcstatus.h:
+
+/sw/include/silc/silcid.h:
+
+/sw/include/silc/silccommand.h:
+
+/sw/include/silc/silcauth.h:
+
+/sw/include/silc/silcmessage.h:
+
+/sw/include/silc/silcmessage_i.h:
+
+/sw/include/silc/silcchannel.h:
+
+/sw/include/silc/silcpacket.h:
+
+/sw/include/silc/silcnotify.h:
+
+/sw/include/silc/silcmode.h:
+
+/sw/include/silc/silcattrs.h:
+
+/sw/include/silc/silcpubkey.h:
+
+/sw/include/silc/silcapputil.h:
+
+/sw/include/silc/silcidcache.h:
+
+/sw/include/silc/silcskr.h:
+
+/sw/include/silc/silcskr_i.h:
+
+/sw/include/silc/silcske.h:
+
+/sw/include/silc/silcske_groups.h:
+
+/sw/include/silc/silcske_payload.h:
+
+/sw/include/silc/silcske_i.h:
+
+/sw/include/silc/silcconnauth.h:
+
+/sw/include/silc/silcsftp.h:
+
+/sw/include/silc/silcsftp_fs.h:
+
+/sw/include/silc/silchttpserver.h:
+
+/sw/include/silc/silchttpphp.h:
+
+/sw/include/silc/silcclient.h:
+
+/sw/include/silc/client.h:
+
+/sw/include/silc/silcclient_entry.h:
+
+silcpurple.h:
+
+../../../libpurple/account.h:
+
+../../../libpurple/accountopt.h:
+
+../../../libpurple/cmds.h:
+
+../../../libpurple/conversation.h:
+
+../../../libpurple/debug.h:
+
+../../../libpurple/ft.h:
+
+../../../libpurple/notify.h:
+
+../../../libpurple/prpl.h:
+
+../../../libpurple/request.h:
+
+../../../libpurple/roomlist.h:
+
+../../../libpurple/server.h:
+
+../../../libpurple/util.h:
+
+../../../libpurple/imgstore.h:
+
+wb.h:
+
+../../../libpurple/whiteboard.h:

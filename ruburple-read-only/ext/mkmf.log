@@ -1,0 +1,156 @@
+find_executable: checking for pkg-config... -------------------- yes
+
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/mkmf.rb:997: warning: Insecure world writable dir /Users/deanchen/Documents/CMU/se-2010-spring-practicum-team4 in PATH, mode 040777
+--------------------
+
+have_library: checking for main() in -lglib-2.0... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64      -lruby -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+ld: warning: in /sw/lib/libglib-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libgthread-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libintl.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lgthread-2.0... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64     -lglib-2.0  -lruby -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+ld: warning: in /sw/lib/libglib-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libgthread-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libintl.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+find_header: checking for libpurple/core.h in /usr/include,/usr/local/include,/opt/local/include... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE     -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <libpurple/core.h>
+/* end */
+
+--------------------
+
+find_library: checking for purple_core_init() in -lpurple... -------------------- no
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/tmp//ccEFRgM7.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))purple_core_init; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+ld: warning: in /sw/lib/libgthread-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libglib-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libpurple.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libintl.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+Undefined symbols for architecture i386:
+  "_purple_core_init", referenced from:
+      _t in ccZDelCu.o
+ld: symbol(s) not found for architecture i386
+collect2: ld returned 1 exit status
+lipo: can't open input file: /var/tmp//ccbfzyZj.out (No such file or directory)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { purple_core_init(); return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/tmp//ccwP6fva.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))purple_core_init; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+ld: warning: in /usr/local/lib/libgthread-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /usr/local/lib/libglib-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /usr/local/lib/libpurple.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /usr/local/lib/libintl.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+Undefined symbols for architecture i386:
+  "_purple_core_init", referenced from:
+      _t in ccjgQW0W.o
+ld: symbol(s) not found for architecture i386
+collect2: ld returned 1 exit status
+lipo: can't open input file: /var/tmp//cctPSqBd.out (No such file or directory)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { purple_core_init(); return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/opt/local/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘purple_core_init’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/tmp//ccIrlGs4.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))purple_core_init; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -g -gdwarf-2 -g3 -I/sw/include/glib-2.0 -I/sw/lib/glib-2.0/include conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/opt/local/lib -L. -arch i386 -arch x86_64     -lgthread-2.0 -lglib-2.0  -lruby -lpurple -lgthread-2.0 -lglib-2.0  -lpthread -ldl   -L/sw/lib -lgthread-2.0 -lglib-2.0 -lintl"
+ld: warning: directory '/opt/local/lib' following -L not found
+ld: warning: in /sw/lib/libgthread-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libglib-2.0.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libpurple.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+ld: warning: in /sw/lib/libintl.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+Undefined symbols for architecture i386:
+  "_purple_core_init", referenced from:
+      _t in ccz1PyHn.o
+ld: symbol(s) not found for architecture i386
+collect2: ld returned 1 exit status
+ld: warning: directory '/opt/local/lib' following -L not found
+lipo: can't open input file: /var/tmp//cclna8Jm.out (No such file or directory)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { purple_core_init(); return 0; }
+/* end */
+
+--------------------
+
