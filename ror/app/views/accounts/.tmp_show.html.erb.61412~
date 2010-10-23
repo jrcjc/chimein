@@ -1,0 +1,9 @@
+<p>
+  <b>Username:</b>
+  <%=h @account.username %>
+</p>
+<p>
+	<b>Do you want to chat with someone who bought the desire product that you wanted?  Sign up your IM id and you will get notified.</b>
+	<%=link_to 'Add My IM', :controller => "ims", :action => "new", :account_id => @account %></td>
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
