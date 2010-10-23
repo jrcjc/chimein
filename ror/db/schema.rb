@@ -9,9 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100917021934) do
+ActiveRecord::Schema.define(:version => 20101009181447) do
+
+  create_table "accounts", :force => true do |t|
+    t.text     "username"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "ims", :force => true do |t|
+    t.integer  "account_id", :limit => 11
     t.text     "protocol"
     t.text     "username"
     t.text     "password"

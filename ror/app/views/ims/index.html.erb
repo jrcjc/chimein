@@ -6,12 +6,14 @@
 
 <% @ims.each do |im| %>
   <tr>
+  	<td><%=h im.account_id %></td>
   	<td><%=h im.protocol %></td>
     <td><%=h im.username %></td>
 	<td><%=h im.status %></td>
     <td><%= link_to 'Show', im %></td>
     <td><%= link_to 'Edit', edit_im_path(im) %></td>
     <td><%= link_to 'Destroy', im, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td><%= link_to 'Invite For Video Chat', 'VideoChatQS.html?action=invite&im=' + im.username + '&p=' + im.protocol%></td>
   </tr>
 <% end %>
 </table>

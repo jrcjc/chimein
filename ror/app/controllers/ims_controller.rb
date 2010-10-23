@@ -1,7 +1,7 @@
 require 'ruburple'
 
 class ImsController < ApplicationController
-  
+  protect_from_forgery :except => :sendIM
                   
   def initialize(*params)
     super(*params)
@@ -22,9 +22,12 @@ class ImsController < ApplicationController
     #TODO: add read system accounts from configuration
     p1 = Ruburple::get_protocol("Yahoo")
     @sysYIM = p1.get_account("yoyochemin_test1", "test123")
-    if(!@sysYIM.connecting?)
-      @sysYIM.connect
-    end
+#    if(!@sysYIM.connecting?)
+#      puts "testing connecting..."
+#      @sysYIM.enabled = true
+#      @sysYIM.connect
+#      @sysYIM.savedstatus = Ruburple::Protocol::Account::SavedStatus.new(Ruburple::Protocol::Account::Status::STATUS_AVAILABLE)
+#    end
   end
 
 
@@ -58,7 +61,9 @@ class ImsController < ApplicationController
   # GET /ims/new.xml
   def new
     @im = Im.new
-
+    @a_id = params[:a_id]
+    @default_type = "User"
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @im }
@@ -74,7 +79,7 @@ class ImsController < ApplicationController
   # POST /ims.xml
   def create
     @im = Im.new(params[:im])
-
+    
     respond_to do |format|
       if @im.save
         flash[:notice] = 'Im was successfully created.'
@@ -139,10 +144,21 @@ class ImsController < ApplicationController
     protocol = params[:protocol]
     username = params[:username]
     message = params[:message]
-    if protocol == "Yahoo"
-      if @sysYIM.connecting?
-        @sysYIM.connection.send_im(username, message)
+    if protocol == "Yahoo" || protocol == "yahoo"
+      if(!@sysYIM.connecting?)
+        puts "connect again"
+        @sysYIM.enabled = true
+        @sysYIM.connect
+        @sysYIM.savedstatus = Ruburple::Protocol::Account::SavedStatus.new(Ruburple::Protocol::Account::Status::STATUS_AVAILABLE)
+        sleep 7
       end
+      
+      puts "before send im"
+      @sysYIM.connection.send_im(username, message)
+    end
+    
+     respond_to do |format|
+      format.xml  { head :ok }
     end
   end
 end

@@ -422,3 +422,1534 @@ Processing ImsController#index (for 127.0.0.1 at 2010-09-21 16:59:17) [GET]
 Rendering template within layouts/ims
 Rendering ims/index
 Completed in 55803ms (View: 83, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 11:56:49) [GET]
+  [4;36;1mIm Load (19.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 25377ms (View: 130, DB: 21) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-08 13:24:53) [GET]
+
+Errno::EPIPE (Broken pipe):
+  app/controllers/ims_controller.rb:9:in `write'
+  app/controllers/ims_controller.rb:9:in `puts'
+  app/controllers/ims_controller.rb:9:in `initialize'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (102.8ms)
+Rendered rescues/_request_and_response (138.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:25:20) [GET]
+  [4;36;1mIm Load (19.9ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.9ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+
+ActionView::TemplateError (undefined local variable or method `protocol' for #<ActionView::Base:0x103efa430>) on line #15 of app/views/ims/index.html.erb:
+12:     <td><%= link_to 'Show', im %></td>
+13:     <td><%= link_to 'Edit', edit_im_path(im) %></td>
+14:     <td><%= link_to 'Destroy', im, :confirm => 'Are you sure?', :method => :delete %></td>
+15: 	<td><%= redirect_to 'VideoChat.html?action=invite&im=' + im.username + '&p=' + protocol%></td>
+16:   </tr>
+17: <% end %>
+18: </table>
+
+    app/views/ims/index.html.erb:15
+    app/views/ims/index.html.erb:7:in `each'
+    app/views/ims/index.html.erb:7
+    app/controllers/ims_controller.rb:40:in `index'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:26:15) [GET]
+  [4;35;1mIm Load (14.2ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+
+ActionView::TemplateError (undefined method `redirect_to' for #<ActionView::Base:0x1043c9b78>) on line #15 of app/views/ims/index.html.erb:
+12:     <td><%= link_to 'Show', im %></td>
+13:     <td><%= link_to 'Edit', edit_im_path(im) %></td>
+14:     <td><%= link_to 'Destroy', im, :confirm => 'Are you sure?', :method => :delete %></td>
+15: 	<td><%= redirect_to 'VideoChat.html?action=invite&im=' + im.username + '&p=' + im.protocol%></td>
+16:   </tr>
+17: <% end %>
+18: </table>
+
+    app/views/ims/index.html.erb:15
+    app/views/ims/index.html.erb:7:in `each'
+    app/views/ims/index.html.erb:7
+    app/controllers/ims_controller.rb:40:in `index'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+    /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (367.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:27:45) [GET]
+  [4;36;1mIm Load (16.9ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (2.6ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 9589ms (View: 201, DB: 20) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:28:04) [GET]
+  [4;35;1mIm Load (0.5ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 10456ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:32:19) [GET]
+  [4;36;1mIm Load (1.2ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.5ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 13419ms (View: 47, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:39:16) [GET]
+  [4;36;1mIm Load (17.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 491ms (View: 132, DB: 18) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:46:42) [GET]
+  [4;35;1mIm Load (19.2ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 84ms (View: 44, DB: 20) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:48:53) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 34ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:50:06) [GET]
+  [4;35;1mIm Load (0.6ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 33ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 13:50:37) [GET]
+  [4;36;1mIm Load (0.7ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 347ms (View: 92, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 14:05:46) [GET]
+  [4;36;1mIm Load (0.8ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 454ms (View: 51, DB: 2) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 14:08:05) [GET]
+  [4;35;1mIm Load (33.1ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (1.4ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 167ms (View: 91, DB: 36) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 14:11:18) [GET]
+  [4;36;1mIm Load (3.9ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 95ms (View: 57, DB: 5) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 14:37:26) [GET]
+  [4;35;1mIm Load (21.1ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 85ms (View: 45, DB: 22) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:12:45) [GET]
+  [4;36;1mIm Load (15.8ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 1118ms (View: 228, DB: 17) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:13:05) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=fa9f0402c61b5d5eb5a69327121c32e7d05c87228a9436af1018c6ce6adb64c6"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (736.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:19:30) [GET]
+  [4;35;1mIm Load (18.0ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 75ms (View: 40, DB: 19) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:19:48) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=eb7b2fe8d3c19461921b74589ec0b8c761a50e0853b896a2820601fe42df0c0c"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:22:10) [GET]
+  [4;36;1mIm Load (50.1ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 100ms (View: 35, DB: 51) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:22:19) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=e6544c9463981a632b2bf92f1265e1e8e8eba64018d4058f1692d4cd94e4a8f6"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:23:49) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 142ms (View: 101, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:23:54) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=10620cf6dda891538de5949743322e3675d87da8f72a1e164fea907a740d67ce"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:26:34) [GET]
+  [4;36;1mIm Load (15.8ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 158ms (View: 107, DB: 16) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:26:39) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=0282c479d82f8a217b9d886318e7bf9500f177b85e399634b33db329cc28c434"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:29:19) [GET]
+  [4;35;1mIm Load (17.1ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 46ms (View: 15, DB: 18) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:29:24) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=02483df81254a1602a6e415c0ca60aa85565d9084fe7b46e1a9f65bc7c6cad22"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  app/controllers/ims_controller.rb:150:in `sendIM'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:34:04) [GET]
+  [4;36;1mIm Load (0.7ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 126ms (View: 87, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:34:12) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=337830b38f2cb74da997dde463e7a351fca008c6f97a7fa4fc521b225c15eb81"}
+Redirected to http://0.0.0.0:3010/ims
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:34:12) [GET]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:35:49) [GET]
+  [4;36;1mIm Load (18.2ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 130ms (View: 74, DB: 19) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:36:46) [GET]
+  [4;36;1mIm Load (0.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 60ms (View: 44, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:36:51) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=6be34fecb806d8c3387bf568d1ab4707ed96b5d9440ec3fa451f24ec77520c5b"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  app/controllers/ims_controller.rb:150:in `sendIM'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:37:59) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 44ms (View: 30, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:38:03) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=0a302af3b8aff2e7cbc7c60aa1170b6ff28f57b8ed7db8b62f97a71b01fdfa67"}
+Rendering template within layouts/ims
+Rendering ims/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/ims/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @ims.each do |im| %>
+8:   <tr>
+9:   	<td><%=h im.protocol %></td>
+10:     <td><%=h im.username %></td>
+
+    app/views/ims/index.html.erb:7
+    app/controllers/ims_controller.rb:151:in `sendIM'
+    app/controllers/ims_controller.rb:150:in `sendIM'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:39:22) [GET]
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:39:26) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=567dd8803ad951ec8183914163509c44d6dd6a1175f0d93a90209b6513bafc6c"}
+Rendering template within layouts/ims
+Rendering <h>test</h>
+
+ActionView::MissingTemplate (Missing template <h>test</h>.erb in view path app/views):
+  app/controllers/ims_controller.rb:151:in `sendIM'
+  app/controllers/ims_controller.rb:150:in `sendIM'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:40:11) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.6ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:40:15) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=f7946cb3d9bb65201f1e3b1d85546053725f328f4470c9c6c9e0967318fb1bbd"}
+
+ActionView::MissingTemplate (Missing template ims/sendIM.erb in view path app/views):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:42:28) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:42:31) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=d4d3c285f253bb3ae0e3a6dbce39148947be9292874022981bd98f12a6758692"}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-08 20:43:19) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 116ms (View: 96, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-08 20:43:22) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=1c590abc1a03f6e10eb85faa2a7d16afa4471d53ca4937503597517b5d496de5"}
+Completed in 16039ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:13:24) [GET]
+  [4;36;1mIm Load (30.7ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 112ms (View: 67, DB: 31) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:13:34) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=467c20ee9c398486280f5e6c0345aed4031d2b483f7f604ca44cf9e1197542c0"}
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:18:53) [GET]
+  [4;36;1mIm Load (13.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 93ms (View: 59, DB: 14) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:19:04) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=ea102872580ccd771ca8e68feff02379862def261c6442fdfc0efc693f2b14a5"}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:23:52) [GET]
+  [4;36;1mIm Load (19.0ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 393ms (View: 350, DB: 20) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:24:21) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=34fc20bc4df9b163494fd788dcf634a1181563bd48913e39aff9872b4c2d365a"}
+
+NoMethodError (undefined method `assert_within' for #<ImsController:0x1041bdf28>):
+  app/controllers/ims_controller.rb:149:in `sendIM'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (58.9ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:26:07) [GET]
+  [4;35;1mIm Load (19.2ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.7ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 81ms (View: 29, DB: 21) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:26:11) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=5c8b9180735b86090404779e58ace02dc653ea249270a76cbf0af561c8173ecd"}
+Completed in 27889ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:29:38) [GET]
+  [4;36;1mIm Load (13.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 66ms (View: 32, DB: 14) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:29:43) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=cb88aadf0aa275901f024d2debecb5f62d47e7ebda2206faf2ce8a80fb9d91de"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:30:56) [GET]
+  [4;35;1mIm Load (12.6ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 118ms (View: 11, DB: 13) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:31:01) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=5f48d09789109d2faca663a825b1dd8a43771dd34c3f64cfd0b607e54d935cb1"}
+Completed in 10008ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:35:09) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 28ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:35:17) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=d5b4226d3a247d59ad7c6d2f4b46bc06ac6462589bcd7e53a224c834343e0059"}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:36:28) [GET]
+  [4;35;1mIm Load (15.9ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 40ms (View: 12, DB: 16) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:36:32) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=96f6f55daab36f61428c120d799379d5a34e16d1272bd5c52e5933b13d4f676d"}
+Completed in 10022ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:39:26) [GET]
+  [4;36;1mIm Load (19.6ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 81ms (View: 48, DB: 20) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:39:33) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=25257f0457ad89579696772befc3be5cea48efe5057ca913781bb6b9a7f99fa0"}
+Completed in 7040ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:39:56) [GET]
+  [4;35;1mIm Load (10.6ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 114ms (View: 12, DB: 11) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:40:01) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/imsVideoChatQS.html?action=join&farid=deecf5c94e9f8d99909ea3d01476c7a437653d43464324f41b43c6f7fef9b388"}
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:46:24) [GET]
+  [4;36;1mIm Load (20.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 85ms (View: 51, DB: 21) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:46:40) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=1c1f5a2b71083780cfff1be1cd7aec36ee80c04685e368829fe72f7eba787907"}
+Completed in 7013ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:48:33) [GET]
+  [4;35;1mIm Load (10.2ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 150ms (View: 52, DB: 11) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:48:39) [POST]
+  Parameters: {"username"=>"jrcjc", "protocol"=>"Yahoo", "message"=>"/imsVideoChatQS.html?action=join&farid=5b576bd42f2f81242d9a1694d04d3add1293b94c1f873c4eecd3bf35b7feff84"}
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 10:50:51) [GET]
+  [4;36;1mIm Load (18.1ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 135ms (View: 90, DB: 19) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 10:50:55) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"/ims/sendIM/VideoChatQS.html?action=join&farid=b353f6cb8de68ccfced76fbf6a03e62a7223e3b7e2d8f3fbea129419c2496d03"}
+Completed in 7010ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:03:07) [GET]
+  [4;35;1mIm Load (27.1ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 75ms (View: 38, DB: 28) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 11:03:13) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"http/VideoChatQS.html?action=join&farid=8a825c540055584fec2db5bc4185c76f79bdd4211697b5ad434ca6018476b7d7"}
+Completed in 7009ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:05:20) [GET]
+  [4;36;1mIm Load (14.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 33ms (View: 11, DB: 15) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 11:05:24) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"0.0.0.0:3010/VideoChatQS.html?action=join&farid=0d4b733597df6fd9e84240d688ef1384f12ac9846319c1e7cdcad77a024f93e1"}
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:06:42) [GET]
+  [4;36;1mIm Load (17.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.1ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 118ms (View: 86, DB: 18) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 11:06:46) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"0.0.0.0:3010/VideoChatQS.html?action=join&farid=6fabcb26036a39878f30f36efc04a8837bac5d8335d70de7f9f5d21b00ea756e"}
+Completed in 7012ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:08:46) [GET]
+  [4;36;1mIm Load (16.2ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'yoyochemin_test1') LIMIT 1[0m
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'rriill') LIMIT 1[0m
+  [4;35;1mIm Load (0.1ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = ' darvyfranco') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 87ms (View: 53, DB: 17) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 11:08:51) [POST]
+  Parameters: {"protocol"=>"Yahoo", "username"=>"jrcjc", "message"=>"http://0.0.0.0:3010/VideoChatQS.html?action=join&farid=5013cd96935d23c5b0a8661069e8514018527ece31ea71ddac7cecaec3714c46"}
+Completed in 7012ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 11:09:08) [POST]
+  Parameters: {"username"=>"null", "protocol"=>"null", "message"=>"http://0.0.0.0:3010/VideoChatQS.html?action=join&farid=b919897991b484f8b0c4369dc162212e84ce5c6a2f3048c8a878e417a12ffce1"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateIms (20100917021934)
+Migrating to CreateAccounts (20101009181447)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (17.8ms)[0m   [0mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (18.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101009181447')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ims")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateIms (20100917021934)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "ims" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "account_id" integer(11), "protocol" text, "username" text, "password" text, "type" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100917021934')[0m
+Migrating to CreateAccounts (20101009181447)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101009181447')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("accounts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ims")[0m
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:29:40) [GET]
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 47ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:29:46) [GET]
+  [4;35;1mAccount Load (0.3ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 85ms (View: 64, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-10-09 11:30:30) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-10-09 11:30:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew="}
+  [4;36;1mAccount Create (0.4ms)[0m   [0;1mINSERT INTO "accounts" ("created_at", "updated_at", "username") VALUES('2010-10-09 18:30:34', '2010-10-09 18:30:34', NULL)[0m
+Redirected to http://0.0.0.0:3010/accounts/1
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:30:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:30:36) [GET]
+  [4;36;1mAccount Load (0.5ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-10-09 11:30:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/accounts/1/edit]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:30:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:30:49) [GET]
+  [4;35;1mAccount Load (0.3ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-10-09 11:30:52) [DELETE]
+  Parameters: {"authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "id"=>"1"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+  [4;35;1mAccount Destroy (0.2ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3010/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:30:52) [GET]
+  [4;36;1mAccount Load (0.3ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-09 11:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/account/new" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-10-09 11:36:47) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-10-09 11:37:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"eWG6yReWWdLWDXroE4JVYNVzPD5HOh0Ztbw5vtcoWdQ=", "account"=>{"username"=>"chimein_1"}}
+  [4;35;1mAccount Create (0.6ms)[0m   [0mINSERT INTO "accounts" ("created_at", "updated_at", "username") VALUES('2010-10-09 18:37:02', '2010-10-09 18:37:02', 'chimein_1')[0m
+Redirected to http://0.0.0.0:3010/accounts/2
+Completed in 11ms (DB: 1) | 302 Found [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:37:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:37:15) [GET]
+  [4;35;1mAccount Load (0.3ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:39:32) [GET]
+  [4;36;1mAccount Load (0.4ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-09 11:39:46) [GET]
+
+ActionController::RoutingError (No route matches "/account/2" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:39:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-10-09 11:39:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/accounts/2/edit]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:45:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+
+ActionView::TemplateError (undefined local variable or method `im' for #<ActionView::Base:0x1035b2238>) on line #7 of app/views/accounts/show.html.erb:
+4: </p>
+5: <p>
+6: 	<b>Do you want to chat with someone who bought the desire product that you wanted?  Sign up your IM id and you will get notified.</b>
+7: 	<%=link_to 'Add My IM', @account.id, :action=>im, :method => :new %></td>
+8: <%= link_to 'Edit', edit_account_path(@account) %> |
+9: <%= link_to 'Back', accounts_path %>
+
+    app/views/accounts/show.html.erb:7
+    app/controllers/accounts_controller.rb:18:in `show'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (104.3ms)
+Rendered rescues/_request_and_response (16.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 11:53:35) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 93ms (View: 28, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:53:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Account with ID=1):
+  app/controllers/accounts_controller.rb:16:in `show'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 11:53:50) [GET]
+  [4;36;1mAccount Load (0.3ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 24ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 11:53:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 11:54:01) [GET]
+  Parameters: {"account_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/ims/new?account_id=2]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:06:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 50ms (View: 43, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:06:47) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:10:18) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 80ms (View: 75, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:10:19) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:16:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.4ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 25ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:16:31) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:16:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SDI03dddQs0xXNCcZ2iRz2YeaWx+TpQT3XwKe+E86gY=", "im"=>{"username"=>"jrcjc", "protocol"=>"Yahoo", "password"=>""}}
+  [4;36;1mIm Create (12.7ms)[0m   [0;1mINSERT INTO "ims" ("created_at", "updated_at", "account_id", "protocol", "username", "type", "password") VALUES('2010-10-09 19:16:39', '2010-10-09 19:16:39', NULL, 'Yahoo', 'jrcjc', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/1
+Completed in 41ms (DB: 13) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:16:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 1) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/1]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:17:41) [GET]
+  [4;36;1mIm Load (0.7ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 81ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#destroy (for 127.0.0.1 at 2010-10-09 12:17:45) [DELETE]
+  Parameters: {"authenticity_token"=>"SDI03dddQs0xXNCcZ2iRz2YeaWx+TpQT3XwKe+E86gY=", "id"=>"1"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 1) [0m
+  [4;35;1mIm Destroy (0.2ms)[0m   [0mDELETE FROM "ims" WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3010/ims
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/ims/1]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:17:45) [GET]
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:17:47) [GET]
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/ims/new]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:17:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SDI03dddQs0xXNCcZ2iRz2YeaWx+TpQT3XwKe+E86gY=", "im"=>{"username"=>"jrcjc", "protocol"=>"Yahoo", "account_id"=>"2", "type"=>"User", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mIm Create (0.4ms)[0m   [0mINSERT INTO "ims" ("created_at", "updated_at", "account_id", "protocol", "username", "type", "password") VALUES('2010-10-09 19:17:58', '2010-10-09 19:17:58', 2, 'Yahoo', 'jrcjc', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/2
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:17:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:22:11) [GET]
+  [4;36;1mIm Load (0.5ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 203ms (View: 97, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#destroy (for 127.0.0.1 at 2010-10-09 12:22:21) [DELETE]
+  Parameters: {"authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "id"=>"2"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 2) [0m
+  [4;35;1mIm Destroy (0.3ms)[0m   [0mDELETE FROM "ims" WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3010/ims
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/ims/2]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:22:21) [GET]
+  [4;36;1mIm Load (0.3ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:22:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 88ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:22:28) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:22:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"jrcjc", "protocol"=>"Yahoo", "password"=>""}}
+
+TypeError (can't convert nil into String):
+  app/controllers/ims_controller.rb:82:in `create'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:30:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccount Load (0.6ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 249ms (View: 116, DB: 1) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:30:30) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 71ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:30:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"dd", "protocol"=>"Yahoo", "account_id"=>"2", "type"=>"User", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/ims_controller.rb:82:in `create'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (128.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 12:33:33) [GET]
+  [4;36;1mAccount Load (0.4ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 107ms (View: 96, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:33:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/accounts/2]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:33:37) [GET]
+  Parameters: {"a_id"=>"2"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 25ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=2]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:33:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"tt", "protocol"=>"Yahoo", "account_id"=>"2", "type"=>"User", "password"=>"tt"}}
+WARNING: Can't mass-assign these protected attributes: type
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/ims_controller.rb:82:in `create'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/deanchen/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/deanchen/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (164.7ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:34:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"tt", "protocol"=>"Yahoo", "account_id"=>"2", "type"=>"User", "password"=>"tt"}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mIm Create (23.2ms)[0m   [0;1mINSERT INTO "ims" ("created_at", "updated_at", "account_id", "protocol", "username", "type", "password") VALUES('2010-10-09 19:34:58', '2010-10-09 19:34:58', 2, 'Yahoo', 'tt', NULL, 'tt')[0m
+Redirected to http://0.0.0.0:3010/ims/3
+Completed in 9488ms (DB: 23) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:34:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 3) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/3]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:39:23) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."username" = 'tt') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#destroy (for 127.0.0.1 at 2010-10-09 12:40:01) [DELETE]
+  Parameters: {"authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "id"=>"3"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 3) [0m
+  [4;35;1mIm Destroy (0.5ms)[0m   [0mDELETE FROM "ims" WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3010/ims
+Completed in 10ms (DB: 1) | 302 Found [http://0.0.0.0/ims/3]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:40:02) [GET]
+  [4;36;1mIm Load (0.4ms)[0m   [0;1mSELECT * FROM "ims" [0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 12:40:08) [GET]
+  [4;35;1mAccount Load (0.3ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-10-09 12:40:12) [DELETE]
+  Parameters: {"authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "id"=>"2"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+  [4;35;1mAccount Destroy (0.2ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3010/accounts
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/accounts/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-10-09 12:40:12) [GET]
+  [4;36;1mAccount Load (0.3ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-10-09 12:40:14) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 29ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-10-09 12:40:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "account"=>{"username"=>"chimein_2"}}
+  [4;35;1mAccount Create (0.3ms)[0m   [0mINSERT INTO "accounts" ("created_at", "updated_at", "username") VALUES('2010-10-09 19:40:23', '2010-10-09 19:40:23', 'chimein_2')[0m
+Redirected to http://0.0.0.0:3010/accounts/3
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-10-09 12:40:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/accounts/3]
+
+
+Processing ImsController#new (for 127.0.0.1 at 2010-10-09 12:40:24) [GET]
+  Parameters: {"a_id"=>"3"}
+Rendering template within layouts/ims
+Rendering ims/new
+Completed in 76ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/ims/new?a_id=3]
+
+
+Processing ImsController#create (for 127.0.0.1 at 2010-10-09 12:40:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"jrcjc", "protocol"=>"yahoo", "account_id"=>"3", "type"=>"User", "password"=>""}}
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mIm Create (0.4ms)[0m   [0mINSERT INTO "ims" ("created_at", "updated_at", "account_id", "protocol", "username", "type", "password") VALUES('2010-10-09 19:40:38', '2010-10-09 19:40:38', 3, 'yahoo', 'jrcjc', NULL, '')[0m
+Redirected to http://0.0.0.0:3010/ims/4
+Completed in 13555ms (DB: 0) | 302 Found [http://0.0.0.0/ims]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:40:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-10-09 12:41:21) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mIm Load (5.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 60ms (View: 43, DB: 5) | 200 OK [http://0.0.0.0/ims/4/edit]
+
+
+Processing ImsController#update (for 127.0.0.1 at 2010-10-09 12:41:36) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"jrcjc", "protocol"=>"yahoo", "type"=>"User", "password"=>"test"}, "id"=>"4"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mIm Update (0.3ms)[0m   [0mUPDATE "ims" SET "updated_at" = '2010-10-09 19:41:36', "password" = 'test' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3010/ims/4
+Completed in 14ms (DB: 0) | 302 Found [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:41:36) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-10-09 12:41:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/ims/4/edit]
+
+
+Processing ImsController#update (for 127.0.0.1 at 2010-10-09 12:41:45) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"UjQWc5SueqUCmVcZkc6+JPtdQ49Qjz5FiWO4wWMQGew=", "im"=>{"username"=>"jrcjc", "protocol"=>"yahoo", "type"=>"User", "password"=>"test"}, "id"=>"4"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+WARNING: Can't mass-assign these protected attributes: type
+Redirected to http://0.0.0.0:3010/ims/4
+Completed in 13ms (DB: 0) | 302 Found [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#show (for 127.0.0.1 at 2010-10-09 12:41:45) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mIm Load (0.2ms)[0m   [0mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ims/4]
+
+
+Processing ImsController#edit (for 127.0.0.1 at 2010-10-09 12:41:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."id" = 4) [0m
+Rendering template within layouts/ims
+Rendering ims/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/ims/4/edit]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:41:59) [GET]
+  [4;35;1mIm Load (0.3ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 12:42:08) [POST]
+  Parameters: {"protocol"=>"yahoo", "username"=>"jrcjc", "message"=>"http://0.0.0.0:3010/VideoChatQS.html?action=join&farid=00a9635af57c3e98b594fc70cbd68871def8091e1cbe067bd023b830ddea458a"}
+Completed in 11748ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#index (for 127.0.0.1 at 2010-10-09 12:42:52) [GET]
+  [4;35;1mIm Load (0.4ms)[0m   [0mSELECT * FROM "ims" [0m
+  [4;36;1mIm Load (0.2ms)[0m   [0;1mSELECT * FROM "ims" WHERE ("ims"."username" = 'jrcjc') LIMIT 1[0m
+Rendering template within layouts/ims
+Rendering ims/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/ims]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 12:42:55) [POST]
+  Parameters: {"protocol"=>"yahoo", "username"=>"jrcjc", "message"=>"http://0.0.0.0:3010/VideoChatQS.html?action=join&farid=67f60cf5e88a56daf269ffa7a186e5ecf88b8c42556733fa7670f747e3e5b63a"}
+Completed in 17771ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]
+
+
+Processing ImsController#sendIM (for 127.0.0.1 at 2010-10-09 12:43:19) [POST]
+  Parameters: {"protocol"=>"null", "username"=>"null", "message"=>"http://0.0.0.0:3010/VideoChatQS.html?action=join&farid=48f3eb50c8aa87d6b49b0a08640b5c2e572043bb1c734fbe4eba1cc4912b7547"}
+Completed in 10824ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/ims/sendIM]

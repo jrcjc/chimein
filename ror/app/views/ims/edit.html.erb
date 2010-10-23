@@ -2,6 +2,10 @@
 
 <% form_for(@im) do |f| %>
   <%= f.error_messages %>
+   <p>
+    <%= f.label :account_id %><br />
+    <%= f.text_field :account_id, :disabled => 'disabled' %>
+  </p>
 <p>
     <%= f.label :protocol %><br />
     <%= f.text_field :protocol %>

@@ -16,7 +16,7 @@
 			import mx.formatters.DateFormatter;
 			
 			// rtmfp server address (Adobe Stratus or FMS)
-			[Bindable] private var connectUrl:String = "rtmfp://stratus.adobe.com";//"rtmfp://stratus.rtmfp.net";
+			[Bindable] private var connectUrl:String = "rtmfp://stratus.rtmfp.net";//"rtmfp://stratus.adobe.com"; // //
 			
 			// developer key, please insert your developer key here
 			//private const DeveloperKey:String = "your developer key";
@@ -281,7 +281,7 @@
 						break;
 					
 					case "NetConnection.Connect.Failed":
-						status("Unable to connect to " + connectUrl + "\n");
+						status("Unable to connect to " + connectUrl + "\n" + event.info.error);
 						loginState = LoginNotConnected;
 						break;
 					
@@ -350,14 +350,19 @@
 				var variables:URLVariables = new URLVariables();
 				variables.protocol = _protocol;
 				variables.username = _otherIM;
-				variables.message = request.url.substr(0, request.url.indexOf("/", request.url.indexOf("//")+2)) 
-								+ "VideoChatQS.html?action=join&farid=" + netConnection.nearID;
+				var myArray:Array = _qs.url.split("/");
+				var protocol:String = myArray[0].toString();
+				var domain:String = myArray[2].toString();
+				variables.message = // request.url.substr(0, request.url.indexOf("/", request.url.indexOf("//")+2)) 
+					 protocol + "//" + domain + "/VideoChatQS.html?action=join&farid=" + netConnection.nearID;
 								
 				request.data = variables;
 				request.method = URLRequestMethod.POST
 				urlLoader.load(request);
+				
 
 			}
+			
 			private function completeRegistration():void
 			{
 				// start the control stream that will listen to incoming calls
